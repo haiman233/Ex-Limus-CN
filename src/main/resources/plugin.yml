@@ -1,0 +1,22 @@
+
+name: Ex-Limus
+
+author: TerslenK
+
+description: A remake of a known mod called "Ex Nihilio"
+
+main: io.github.terslenk.exlimus.ExLimus
+
+website: https://github.com/TerslenK/Ex-Limus
+
+version: ${project.version}
+
+api-version: 1.17
+
+depend:
+- Slimefun
+commands:
+  exlimus:
+    description: Do /exlimus help for a list of commands
+    usage: /exlimus <subcommand>
+    aliases: [ el, exl ]
