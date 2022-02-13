@@ -1,3 +1,2 @@
-# Ex-Limus
-<b>A remade of a mod called "Ex Nihilio".</b>
-About isn't available yet.
+# 新手工具
+<b>这个附属添加了几种新手工具</b>
