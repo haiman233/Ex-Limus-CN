@@ -27,17 +27,17 @@ public final class ExLimus extends AbstractAddon {
     }
 
     public void setup() {
-        ItemGroup category = new ItemGroup(ExLimus.createKey("ex_limus_main"), new CustomItemStack(Material.BARREL, "&6Èx Limus"), 6);
+        ItemGroup category = new ItemGroup(ExLimus.createKey("ex_limus_main"), new CustomItemStack(Material.BARREL, "&6新手工具"), 6);
 
-    SlimefunItemStack ItemStack1 = new SlimefunItemStack("EXLIMUS_WOODEN_CROOK", Material.WOODEN_HOE, "&fWooden Crook", "", "&7An Item that let you get some Leaves and Saplings");
+    SlimefunItemStack ItemStack1 = new SlimefunItemStack("EXLIMUS_WOODEN_CROOK", Material.WOODEN_HOE, "&f&l木钩", "&7它可以帮助你快速获取", "&7树叶、树苗、蚕等物品");
 
         new WoodenCrook(category, ItemStack1,RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]  {
-                new ItemStack(Material.STICK),new ItemStack(Material.STICK),null,
+                new ItemStack(Material.STICK),new ItemStack(Material.STICK),new ItemStack(Material.STICK),
                 null            ,             new ItemStack(Material.STICK),null,
                 null            ,             new ItemStack(Material.STICK),null
         }).register(this);
 
-    SlimefunItemStack ItemStack2 = new SlimefunItemStack("EXLIMUS_STONE_HAMMER", Material.STONE_PICKAXE, "&fStone Hammer", "","A Tool that helps you to get some gravel and sand.");
+    SlimefunItemStack ItemStack2 = new SlimefunItemStack("EXLIMUS_STONE_HAMMER", Material.STONE_PICKAXE, "&f&l石锤", "&7它可以帮助你快速获取","&7砂砾和沙子");
 
             new StoneHammer(category, ItemStack2,RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]  {
                     null,new ItemStack(Material.COBBLESTONE),null,
@@ -45,7 +45,7 @@ public final class ExLimus extends AbstractAddon {
                     new ItemStack(Material.STICK),null,null,
         }).register(this);
 
-    SlimefunItemStack ItemStack3 = new SlimefunItemStack("EXLIMUS_WORM", Material.STRING, "&fWorm", "", "&7A creature that can be dropped by Wooden Crook.");
+    SlimefunItemStack ItemStack3 = new SlimefunItemStack("EXLIMUS_WORM", Material.STRING, "&f&l蚕", "", "&7由木钩获取");
 
         new Worm(category, ItemStack3,RecipeType.NULL, new ItemStack[]  {
                 null,null,null,
